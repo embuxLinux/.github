@@ -1,0 +1,45 @@
+name: Bug Report
+description: File a bug report
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Heads Up!
+        * Repo admins may often look for pornography, spam, malware, and other content that breaks the Embux Code of Conduct. **If one of these categories match, your issue will be DELETED.**
+        * Embux 项目不接受中文问题，因为这里的许多管理员不理解它。 请将您的中文信息转给专业人士。 (The Embux Project does not accept issues in Chinese, as many admins here do not understand it. Please direct your Chinese messages to a professional.)
+        * Please try to troubleshoot your issue using `embuxfix` (only available if installed via template or piboot).
+  - type: input
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: "What did you expect to happen?"
+      placeholder: "The Embux installer lets me install Malpeza"
+      validations:
+        required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Actual behaviour
+      description: "What actcually happened?"
+      placeholder: "A kernel panic occured"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Image type
+      description: What image label was used to install Embux on your setup?
+      options:
+        - Template
+        - Tiny
+        - Pi-boot
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: "Output of `embuxjrnl --no-sensitive`. If you can't find it, ssh into your device and run the command."
+      render: shell

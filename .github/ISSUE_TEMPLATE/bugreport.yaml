@@ -15,8 +15,8 @@ body:
       label: Expected behaviour
       description: "What did you expect to happen?"
       placeholder: "The Embux installer lets me install Malpeza"
-      validations:
-        required: true
+    validations:
+       required: true
   - type: input
     id: expected
     attributes:

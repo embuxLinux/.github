@@ -10,7 +10,7 @@ body:
         * Embux 项目不接受中文问题，因为这里的许多管理员不理解它。 请将您的中文信息转给专业人士。 (The Embux Project does not accept issues in Chinese, as many admins here do not understand it. Please direct your Chinese messages to a professional.)
         * Please try to troubleshoot your issue using `embuxfix` (only available if installed via template or piboot).
   - type: input
-    id: expected
+    id: truth
     attributes:
       label: Expected behaviour
       description: "What did you expect to happen?"

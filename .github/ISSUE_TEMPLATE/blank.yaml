@@ -1,0 +1,14 @@
+name: Blank Issue
+description: Write from scratch
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Heads Up!
+        * Repo admins may often look for pornography, spam, malware, and other content that breaks the Embux Code of Conduct. **If one of these categories match, your issue will be DELETED.**
+        * **For Chinese speakers:** 项目不接受中文问题，因为这里的许多管理员不理解它。 请将您的中文信息转给专业人士。
+  - type: textarea
+    id: text
+    attributes:
+      label: Text
+      description: "Markdown formatting is supported."

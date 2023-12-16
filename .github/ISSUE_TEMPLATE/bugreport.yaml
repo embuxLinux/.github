@@ -43,3 +43,16 @@ body:
       label: Relevant log output
       description: "Output of `embuxjrnl --no-sensitive`. If you can't find it, ssh into your device and run the command."
       render: shell
+  - type: markdown
+    attributes:
+      value: |
+        # Please read again before continuing!
+        * Repo admins may often look for pornography, spam, malware, and other content that breaks the Embux Code of Conduct. **If one of these categories match, your issue will be DELETED.**
+        * **For Chinese speakers:** 项目不接受中文问题，因为这里的许多管理员不理解它。 请将您的中文信息转给专业人士。
+        * Please try to troubleshoot your issue using `embuxfix` (only available if installed via template or piboot).
+  - type: checkboxes
+    attributes:
+      label: Do you understand?
+      options:
+        - label: I understand the following above.
+          required: true
